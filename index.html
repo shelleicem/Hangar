@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangar - Legal</title>
+    <title>Hangar - Focus App</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 500px; margin: 80px auto; padding: 20px; color: #333; text-align: center; }
-        h1 { color: #1a1a2e; }
-        a { display: block; margin: 20px 0; padding: 14px; background: #ff6600; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; }
-        a:hover { background: #e55d00; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 500px; margin: 60px auto; padding: 20px; color: #333; text-align: center; }
+        h1 { color: #1a1a2e; margin-bottom: 6px; }
+        .tagline { color: #666; margin-bottom: 36px; }
+        a.link { display: block; margin: 14px 0; padding: 14px; background: #ff6600; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; transition: background .15s; }
+        a.link:hover { background: #e55d00; }
+        a.link.secondary { background: #1a1a2e; }
+        a.link.secondary:hover { background: #2d2d4a; }
+        .feedback-box { margin-top: 40px; padding: 24px; background: #f7f7fa; border-radius: 12px; text-align: left; }
+        .feedback-box h2 { margin-top: 0; color: #1a1a2e; font-size: 20px; }
+        .feedback-box p { margin: 10px 0; color: #555; font-size: 15px; line-height: 1.6; }
+        .feedback-box .email { font-weight: 600; color: #ff6600; }
     </style>
 </head>
 <body>
-    <h1>Hangar</h1>
-    <p>CTDP Focus App</p>
-    <a href="privacy-policy.html">隐私政策 / Privacy Policy</a>
-    <a href="terms-of-use.html">使用条款 / Terms of Use</a>
+    <h1>🚀 Hangar</h1>
+    <p class="tagline">CTDP Focus App · 让专注成为习惯</p>
+
+    <a class="link" href="privacy-policy.html">隐私政策 / Privacy Policy</a>
+    <a class="link" href="terms-of-use.html">使用条款 / Terms of Use</a>
+    <a class="link secondary" href="contact.html">反馈与支持 / Feedback &amp; Support</a>
+
+    <div class="feedback-box">
+        <h2>📮 联系我们 / Contact Us</h2>
+        <p>有任何问题、建议或反馈,欢迎随时联系开发者:</p>
+        <p>邮箱 / Email: <a class="email" href="mailto:indeshelly@gmail.com?subject=Hangar%20%E5%8F%8D%E9%A6%88%E4%B8%8E%E5%BB%BA%E8%AE%AE">indeshelly@gmail.com</a></p>
+        <p style="font-size:13px; color:#888;">点击邮箱地址可直接打开邮件应用 · 通常 1-2 个工作日内回复</p>
+    </div>
 </body>
 </html>
