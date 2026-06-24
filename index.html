@@ -16,8 +16,15 @@
         .lang-switch { float: right; font-size: 13px; }
         .contact-box { background: #fff; border: 1px solid #eee; padding: 20px 22px; border-radius: 12px; margin: 18px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
         .contact-box a.email-link { color: #ff6600; font-weight: 600; font-size: 17px; word-break: break-all; }
-        .cta-btn { display: inline-block; margin: 12px 0; padding: 12px 24px; background: #ff6600; color: white !important; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background .15s; }
+        .cta-btn { display: inline-block; margin: 12px 0; padding: 12px 24px; background: #ff6600; color: white !important; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background .15s; border: 0; cursor: pointer; font-size: 15px; font-family: inherit; }
         .cta-btn:hover { background: #e55d00; text-decoration: none; }
+        .cta-btn.secondary { background: #1a1a2e; }
+        .cta-btn.secondary:hover { background: #2c2c4c; }
+        .email-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding: 14px 16px; background: #f0f0f4; border-radius: 8px; margin: 12px 0; }
+        .email-row code { background: transparent; padding: 0; font-size: 17px; font-weight: 600; color: #1a1a2e; word-break: break-all; flex: 1; min-width: 200px; user-select: all; }
+        .copied-flash { color: #2a8c3a; font-size: 13px; font-weight: 600; margin-left: 8px; opacity: 0; transition: opacity .25s; }
+        .copied-flash.show { opacity: 1; }
+        .note { font-size: 13px; color: #888; line-height: 1.5; }
         .faq { background: #fff; border: 1px solid #eee; padding: 14px 20px; border-radius: 10px; margin: 14px 0; }
         .faq h3 { margin-top: 0; color: #1a1a2e; font-size: 16px; }
         .nav-links { margin-top: 24px; padding: 12px 0; border-top: 1px solid #eee; font-size: 14px; color: #888; }
@@ -36,14 +43,21 @@
     <p>We reply to every email, usually within 1–2 business days. <br>
     我们会回复每一封邮件，通常 1–2 个工作日内。</p>
     <div class="contact-box">
-        <p>📧 <strong>Email / 邮箱：</strong> <a class="email-link" href="mailto:indeshelly@gmail.com?subject=Hangar%20Support">indeshelly@gmail.com</a></p>
-        <p>
+        <p><strong>📧 Email / 邮箱：</strong></p>
+        <div class="email-row">
+            <code id="support-email">indeshelly@gmail.com</code>
+            <button type="button" class="cta-btn secondary" onclick="copyEmail('support-email', this)">📋 Copy / 复制</button>
             <a class="cta-btn" href="mailto:indeshelly@gmail.com?subject=Hangar%20Support%20Request&amp;body=Hi%2C%20I%20need%20help%20with%3A%0A%0A">
-                ✉️ Send Support Email / 发送支持邮件
+                ✉️ Open Mail / 打开邮箱
             </a>
+            <span class="copied-flash" id="support-email-flash">✓ Copied!</span>
+        </div>
+        <p class="note">
+            Tap <strong>📋 Copy</strong> to copy the email address — works on every browser. The <strong>✉️ Open Mail</strong> button only works if your device has a default mail app configured.<br>
+            点「<strong>📋 Copy</strong>」直接复制邮箱地址（任何浏览器都管用）。「<strong>✉️ Open Mail</strong>」按钮需要你的设备配置了默认邮件 app 才能跳转。
         </p>
-        <p style="font-size:13px; color:#888;">
-            Please include: device model, iOS version, and a clear description (or screenshot) of the issue.<br>
+        <p class="note">
+            When emailing, please include: device model, iOS version, and a clear description (or screenshot) of the issue.<br>
             发邮件请告诉我们：设备型号、iOS 版本、问题描述（截图最好）。
         </p>
     </div>
@@ -109,7 +123,12 @@
         <li>Hangar version (Settings → About → Version) / Hangar 版本</li>
         <li>Steps to reproduce + screenshots if possible / 复现步骤 + 截图</li>
     </ul>
-    <p><a class="cta-btn" href="mailto:indeshelly@gmail.com?subject=Hangar%20Bug%20Report&amp;body=Device%3A%20%0AiOS%20version%3A%20%0AApp%20version%3A%20%0A%0ASteps%20to%20reproduce%3A%0A1.%20%0A2.%20%0A3.%20%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20happened%3A%0A">🐛 Send Bug Report</a></p>
+    <div class="email-row">
+        <code id="bug-email">indeshelly@gmail.com</code>
+        <button type="button" class="cta-btn secondary" onclick="copyEmail('bug-email', this)">📋 Copy / 复制</button>
+        <a class="cta-btn" href="mailto:indeshelly@gmail.com?subject=Hangar%20Bug%20Report&amp;body=Device%3A%20%0AiOS%20version%3A%20%0AApp%20version%3A%20%0A%0ASteps%20to%20reproduce%3A%0A1.%20%0A2.%20%0A3.%20%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20happened%3A%0A">🐛 Send Bug Report</a>
+        <span class="copied-flash" id="bug-email-flash">✓ Copied!</span>
+    </div>
 
     <h2>📚 More Info / 更多信息</h2>
     <p>
@@ -118,7 +137,40 @@
     </p>
 
     <div class="nav-links">
-        © 2026 Hangar · Made with ❤️ for focused humans · <a href="mailto:indeshelly@gmail.com">indeshelly@gmail.com</a>
+        © 2026 Hangar · Made with ❤️ for focused humans · <code style="font-size:13px;">indeshelly@gmail.com</code>
     </div>
+
+    <script>
+        function copyEmail(sourceId, btn) {
+            var text = document.getElementById(sourceId).innerText.trim();
+            var flash = document.getElementById(sourceId + '-flash');
+            var fallback = function () {
+                // Legacy fallback for browsers without navigator.clipboard
+                var ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'absolute';
+                ta.style.left = '-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                try { document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(ta);
+            };
+            var showFlash = function () {
+                if (!flash) return;
+                flash.classList.add('show');
+                setTimeout(function () { flash.classList.remove('show'); }, 1800);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(showFlash, function () {
+                    fallback();
+                    showFlash();
+                });
+            } else {
+                fallback();
+                showFlash();
+            }
+        }
+    </script>
 </body>
 </html>
