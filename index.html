@@ -3,34 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangar - Focus App</title>
+    <title>Hangar - Support / 支持与帮助</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 500px; margin: 60px auto; padding: 20px; color: #333; text-align: center; }
-        h1 { color: #1a1a2e; margin-bottom: 6px; }
-        .tagline { color: #666; margin-bottom: 36px; }
-        a.link { display: block; margin: 14px 0; padding: 14px; background: #ff6600; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; transition: background .15s; }
-        a.link:hover { background: #e55d00; }
-        a.link.secondary { background: #1a1a2e; }
-        a.link.secondary:hover { background: #2d2d4a; }
-        .feedback-box { margin-top: 40px; padding: 24px; background: #f7f7fa; border-radius: 12px; text-align: left; }
-        .feedback-box h2 { margin-top: 0; color: #1a1a2e; font-size: 20px; }
-        .feedback-box p { margin: 10px 0; color: #555; font-size: 15px; line-height: 1.6; }
-        .feedback-box .email { font-weight: 600; color: #ff6600; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px; color: #1f1f2e; line-height: 1.7; background: #fafafc; }
+        h1 { color: #1a1a2e; border-bottom: 2px solid #ff6600; padding-bottom: 10px; }
+        h2 { color: #1a1a2e; margin-top: 32px; }
+        h3 { color: #2c2c3e; margin-top: 22px; }
+        p, li { margin: 8px 0; }
+        a { color: #ff6600; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .tagline { color: #666; font-size: 15px; margin-top: -4px; }
+        .lang-switch { float: right; font-size: 13px; }
+        .contact-box { background: #fff; border: 1px solid #eee; padding: 20px 22px; border-radius: 12px; margin: 18px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+        .contact-box a.email-link { color: #ff6600; font-weight: 600; font-size: 17px; word-break: break-all; }
+        .cta-btn { display: inline-block; margin: 12px 0; padding: 12px 24px; background: #ff6600; color: white !important; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background .15s; }
+        .cta-btn:hover { background: #e55d00; text-decoration: none; }
+        .faq { background: #fff; border: 1px solid #eee; padding: 14px 20px; border-radius: 10px; margin: 14px 0; }
+        .faq h3 { margin-top: 0; color: #1a1a2e; font-size: 16px; }
+        .nav-links { margin-top: 24px; padding: 12px 0; border-top: 1px solid #eee; font-size: 14px; color: #888; }
+        .nav-links a { margin-right: 14px; }
+        .updated { color: #888; font-size: 13px; }
+        code { background: #f0f0f4; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+        .badge { display: inline-block; background: #1a1a2e; color: #ff6600; font-size: 11px; padding: 2px 8px; border-radius: 10px; vertical-align: middle; margin-left: 6px; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-    <h1>🚀 Hangar</h1>
-    <p class="tagline">CTDP Focus App · 让专注成为习惯</p>
+    <h1>🚀 Hangar — Support &amp; Help <span class="badge">v1.0</span></h1>
+    <p class="tagline">CTDP Focus App · 专注力训练 / Focus discipline trainer</p>
+    <p class="updated">Last updated / 最后更新：2026-06-24</p>
 
-    <a class="link" href="privacy-policy.html">隐私政策 / Privacy Policy</a>
-    <a class="link" href="terms-of-use.html">使用条款 / Terms of Use</a>
-    <a class="link secondary" href="contact.html">反馈与支持 / Feedback &amp; Support</a>
+    <h2>📮 Contact Us / 联系我们</h2>
+    <p>We reply to every email, usually within 1–2 business days. <br>
+    我们会回复每一封邮件，通常 1–2 个工作日内。</p>
+    <div class="contact-box">
+        <p>📧 <strong>Email / 邮箱：</strong> <a class="email-link" href="mailto:indeshelly@gmail.com?subject=Hangar%20Support">indeshelly@gmail.com</a></p>
+        <p>
+            <a class="cta-btn" href="mailto:indeshelly@gmail.com?subject=Hangar%20Support%20Request&amp;body=Hi%2C%20I%20need%20help%20with%3A%0A%0A">
+                ✉️ Send Support Email / 发送支持邮件
+            </a>
+        </p>
+        <p style="font-size:13px; color:#888;">
+            Please include: device model, iOS version, and a clear description (or screenshot) of the issue.<br>
+            发邮件请告诉我们：设备型号、iOS 版本、问题描述（截图最好）。
+        </p>
+    </div>
 
-    <div class="feedback-box">
-        <h2>📮 联系我们 / Contact Us</h2>
-        <p>有任何问题、建议或反馈,欢迎随时联系开发者:</p>
-        <p>邮箱 / Email: <a class="email" href="mailto:indeshelly@gmail.com?subject=Hangar%20%E5%8F%8D%E9%A6%88%E4%B8%8E%E5%BB%BA%E8%AE%AE">indeshelly@gmail.com</a></p>
-        <p style="font-size:13px; color:#888;">点击邮箱地址可直接打开邮件应用 · 通常 1-2 个工作日内回复</p>
+    <h2>❓ FAQ / 常见问题</h2>
+
+    <div class="faq">
+        <h3>Q: Hangar is asking for Screen Time / 屏幕使用时间 permission. Why?</h3>
+        <p><strong>EN:</strong> Hangar uses Apple's Screen Time API (Family Controls) to block distracting apps <em>only during a focus session you actively start</em>. Selection of which apps to block is entirely up to you, and is stored on-device using Apple's opaque tokens — Hangar itself cannot see which apps you picked. Blocking ends as soon as the session ends or you abandon it.</p>
+        <p><strong>中文：</strong>Hangar 使用 Apple 的「屏幕使用时间 / Family Controls」框架，<em>仅在你主动发起的专注会话期间</em>屏蔽你自己选择的应用。被屏蔽的应用名单只保存在你设备本地（以 Apple 提供的加密令牌形式），Hangar 自身无法获知具体是哪些应用。会话结束或放弃后屏蔽立即解除。</p>
+    </div>
+
+    <div class="faq">
+        <h3>Q: How do I set up Screen Time blocking? / 怎么设置屏蔽？</h3>
+        <p><strong>EN — Step by step:</strong></p>
+        <ol>
+            <li>Open Hangar → tap the menu icon (top left) → <strong>Settings</strong>.</li>
+            <li>Scroll to the <strong>Focus Shield</strong> section.</li>
+            <li>If Screen Time isn't authorized yet, tap <strong>Request Authorization</strong> and grant access in the system prompt.</li>
+            <li>Tap <strong>New Shield Scene</strong>, name it (e.g. "Work"), then pick which apps/categories to block in the Apple Family Activity Picker.</li>
+            <li>Back on the main screen, tap <strong>Start Build</strong> → in Setup, choose a shield scene → tap <strong>Launch Build</strong>. The selected apps will be blocked until the focus session finishes or is aborted.</li>
+        </ol>
+        <p><strong>中文步骤：</strong></p>
+        <ol>
+            <li>打开 Hangar → 左上角菜单 → <strong>设置</strong>。</li>
+            <li>找到「<strong>专注屏蔽</strong>」分区。</li>
+            <li>若尚未授权，点「<strong>请求授权</strong>」并在系统弹窗中同意。</li>
+            <li>点「<strong>新建屏蔽场景</strong>」，命名（如「工作」），在 Apple 的应用选择器中勾选要屏蔽的应用/类别。</li>
+            <li>回到主页 → 点「<strong>开始建造</strong>」→ 在任务设置里选好屏蔽场景 → 点「<strong>启动建造</strong>」。所选应用会在专注期间被屏蔽，直到完成或放弃。</li>
+        </ol>
+    </div>
+
+    <div class="faq">
+        <h3>Q: How do I switch the app language? / 怎么切换语言？</h3>
+        <p>Settings → <strong>Language / 语言</strong> → choose <em>System</em>, <em>简体中文</em>, or <em>English</em>. Changes apply immediately, no restart needed. / 设置 → 「语言」→ 选「跟随系统」「简体中文」或「English」，立即生效。</p>
+    </div>
+
+    <div class="faq">
+        <h3>Q: How do subscriptions work? / 订阅怎么管理？</h3>
+        <p>Hangar offers a monthly subscription, a yearly subscription, and a lifetime unlock. Subscriptions auto-renew through your Apple ID. You can cancel anytime in <code>Settings → [Your Name] → Subscriptions</code> on iOS. / Hangar 提供月度订阅、年度订阅和终身买断。订阅通过 Apple ID 自动续费，可随时在 iOS「设置 → 你的名字 → 订阅」中取消。</p>
+    </div>
+
+    <div class="faq">
+        <h3>Q: I can't find / tap a button. / 某个按钮按了没反应？</h3>
+        <p>Please make sure you've granted Reminders / Notifications / Screen Time permission for whichever feature you're trying to use. If a button is greyed out or unresponsive, double-check the relevant permission in iOS <code>Settings → Privacy &amp; Security</code>. If it still doesn't work, please email us with the device model and iOS version. / 请先确认对应权限（提醒事项 / 通知 / 屏幕使用时间）是否在 iOS「设置 → 隐私与安全性」中已经授予。如果仍然异常，请发邮件附上设备型号和系统版本。</p>
+    </div>
+
+    <div class="faq">
+        <h3>Q: Will my data be uploaded? / 我的数据会被上传吗？</h3>
+        <p>No. All your focus history, streak data, goal tree and settings are stored locally on your device. Hangar does not run any backend service. / 不会。所有专注记录、连击、蓝图与设置都只保存在你本机，Hangar 没有任何后台服务器。</p>
+    </div>
+
+    <div class="faq">
+        <h3>Q: How do I restore my purchases on a new device? / 换设备如何恢复购买？</h3>
+        <p>Sign in with the same Apple ID, then open Hangar → Settings → <strong>Restore Purchases</strong>. / 用同一个 Apple ID 登录，打开 Hangar → 设置 → 「恢复购买」。</p>
+    </div>
+
+    <h2>🐞 Report a Bug / 报告问题</h2>
+    <p>Found a bug? Please send an email with:</p>
+    <ul>
+        <li>Device model (e.g. iPhone 17 Pro Max) / 设备型号</li>
+        <li>iOS version (e.g. iOS 26.5) / 系统版本</li>
+        <li>Hangar version (Settings → About → Version) / Hangar 版本</li>
+        <li>Steps to reproduce + screenshots if possible / 复现步骤 + 截图</li>
+    </ul>
+    <p><a class="cta-btn" href="mailto:indeshelly@gmail.com?subject=Hangar%20Bug%20Report&amp;body=Device%3A%20%0AiOS%20version%3A%20%0AApp%20version%3A%20%0A%0ASteps%20to%20reproduce%3A%0A1.%20%0A2.%20%0A3.%20%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20happened%3A%0A">🐛 Send Bug Report</a></p>
+
+    <h2>📚 More Info / 更多信息</h2>
+    <p>
+        <a href="privacy-policy.html">Privacy Policy / 隐私政策</a> ·
+        <a href="terms-of-use.html">Terms of Use / 使用条款</a>
+    </p>
+
+    <div class="nav-links">
+        © 2026 Hangar · Made with ❤️ for focused humans · <a href="mailto:indeshelly@gmail.com">indeshelly@gmail.com</a>
     </div>
 </body>
 </html>
